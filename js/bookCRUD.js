@@ -60,13 +60,13 @@ function addBookHandler() {
     "publisherName": bookPublisher
   };
 
-  var jsonString = localStorage.getItem("myBooks");
-  var jsonObj = JSON.parse(jsonString);
+  // var jsonString = localStorage.getItem("myBooks");
+  // var jsonObj = JSON.parse(jsonString);
 
-  jsonObj.books.push(saveObj);
-  localStorage.setItem("myBooks", JSON.stringify(jsonObj));
+  // jsonObj.books.push(saveObj);
+  // localStorage.setItem("myBooks", JSON.stringify(jsonObj));
   
-  window.location.href = "adminBooks.html"; //only redirect when successful
+  window.location.href = "adminBooks.html"; 
 }
 
 

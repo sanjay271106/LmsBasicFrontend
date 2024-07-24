@@ -2,6 +2,7 @@ function checkCredentials() {
   var usernameInput = document.getElementById("adminUsername").value;
   var passwordInput = document.getElementById("adminPassword").value;
 
+
   var jsonString = localStorage.getItem("users");
   var jsonObj = JSON.parse(jsonString);
 
@@ -19,4 +20,15 @@ function checkCredentials() {
   else {
     window.location.href = "adminDash.html";
   }
+}
+function checkout() {
+     alert("checked out succesfully");
+}
+function cancel() {
+     alert("process cancelled");
+     window.location.href = "borrowerOptions.html";
+}
+function returned() {
+     alert("book returned successfully");
+     window.location.href = "borrowerOptions.html";
 }
